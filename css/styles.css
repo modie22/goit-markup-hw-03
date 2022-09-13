@@ -27,6 +27,20 @@ body {
 img{
   display: block;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
 .list {
   list-style: none;
   padding: 0;
@@ -54,10 +68,6 @@ img{
   padding-right: 15px;
   margin: 0 auto;
   /* outline: 2px solid tomato;*/
-}
-.container.main {
-  padding-top: 95px;
-  padding-bottom: 95px;
 }
 /*Header section*/
 .page-header {
@@ -144,8 +154,10 @@ img{
   background-color: var(--secondary-bg);
   text-align: center;
 }
+.container.hero{
+  padding: 200px 0;
+}
 .hero-title {
-  display: inline-block;
   color: var(--minor-color);
   font-weight: 900;
   font-size: 44px;
@@ -153,8 +165,9 @@ img{
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
+  
+  max-width: 696px;
+  margin: 0 auto 30px;
 }
 .hero .button {
   font-weight: 700;
@@ -179,6 +192,10 @@ img{
   font-family: inherit;
 }
 /*Features section*/
+.features.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -212,6 +229,9 @@ img{
 }
 
 /*Employment section*/
+.employment.section{
+  padding-bottom: 94px;
+}
 .work-list {
   display: flex;
 }
@@ -224,6 +244,8 @@ img{
 /*Team section*/
 .team-section {
   background-color: var(--button-bg);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
@@ -297,8 +319,6 @@ img{
 }
 .footer-section {
   background-color: var(--secondary-bg);
-}
-.container.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -334,6 +354,10 @@ img{
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*Секція портфоліо*/
+.portfolio-section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
